@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Breakio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar section -->
+
+    <header class="navbar">
+      <div class="logo">break<span>io</span>
+      </div>
+
+        <!-- Hamburger -->
+        <div class="menu-toggle" id="menuToggle">☰
+        </div>
+
+          <nav id="navMenu">
+            <a href="#">Explore</a>
+            <a href="#">Solutions</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Log in</a>
+            <button class="btn small">Start Now</button>
+          </nav>
+    </header>
+
+
+      <!-- Hero Section -->
+      <section class="hero">
+         <h1>It’s time to take a break</h1>
+        <p>Build your meditation skills with an app that gives you all you need.</p>
+
+        <div class="hero-form">
+          <input type="text" placeholder="Enter your name">
+          <button class="btn">Start Now</button>
+        </div>
+
+        <div class="hero-image">
+          <img src="images/Left (2).png" alt="">
+        </div>
+      </section>
+
+
+
+    <!--improve section-->
+
+    <section class="improve-visual">
+      <h2>Get better everyday</h2>
+
+      <p>
+        Et pulvinar nec interdum integer id urna molestie porta nullam. A donec
+        ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor
+        pharetra sed in mauris elementum sollicitudin.
+      </p>
+
+      <button class="primary-btn">Start Now</button>
+
+      <div class="visual-wrapper">
+        <div class="desktop-ui">
+          <img src="images/Frame 47 (2).png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--slider section-->
+
+    <section class="stories">
+      <h2>Stories from our users</h2>
+      <p class="sub">
+        Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec
+        ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor
+        pharetra sed in mauris elementum sollicitudin.
+      </p>
+
+      <div class="slider-wrapper">
+        <button class="arrow left" id="prev">&#10094;</button>
+
+        <div class="slider-view">
+          <div class="slider" id="slider">
+            <div class="card">
+              <span class="badge">Promoted</span>
+              <img src="images/Picture (4).png" />
+              <div class="card-info">
+                <div class="user">
+                  <img src="images/User Thumb (6).png" />
+                  <div>
+                    <h4>Flower Decorations</h4>
+                    <small>by Melvina Spring</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="images/Picture (5).png" />
+              <div class="card-info">
+                <div class="user">
+                  <img src="images/User Thumb (7).png" />
+                  <div>
+                    <h4>Flower Decorations</h4>
+                    <small>by Melvina Spring</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="images/Picture (6).png" />
+              <div class="card-info">
+                <div class="user">
+                  <img src="images/User Thumb (8).png" />
+                  <div>
+                    <h4>Splash</h4>
+                    <small>by Rwanda Melflor</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="images/Picture (7).png" />
+              <div class="card-info">
+                <div class="user">
+                  <img src="images/User Thumb (9).png" />
+                  <div>
+                    <h4>Colorful Face</h4>
+                    <small>by Melvina Spring</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="arrow right" id="next">&#10095;</button>
+      </div>
+    </section>
+
+    <!--testimonial section-->
+
+    <section class="ux-testimonial">
+  
+      <img src="images/Vector (1).png" class="shape shape-left" />
+      <img src="images/Vector (3).png" class="shape shape-right" />
+      <img src="images/Vector (4).png" class="shape shape-curve" />
+      <img src="images/Vector (2).png" class="shape shape-curve1" />
+
+      <h2 class="ux-title">What other users say</h2>
+
+      <div class="testimonial-wrapper">
+
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+
+        <div class="testimonial-card" id="testimonialCard">
+          <h3>Placerat feugiat senectus</h3>
+
+          <p>
+            Ultricies pharetra arcu turpis dui massa interdum lorem. Viverra
+            nunc quisque congue tincidunt potenti. Tellus, enim vel habitasse
+            commodo ultrices aenean ultricies.
+          </p>
+
+          <div class="user">
+            <img src="images/User Thumb (6).png" alt="user" />
+            <div>
+              <h4>Jane Doe</h4>
+              <span>Senior Designer</span>
+            </div>
+          </div>
+        </div>
+        
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </section>
+
+    <!--icon section-->
+
+    <section class="tools-section">
+      <div class="container">
+        <h2>Your favourite tools</h2>
+        <p class="subtitle">
+          In risus nec molestie at in pulvinar tellus. At integer id condimentum
+          gravida nisi nisl. Sem vitae porttitor arcu congue sem erat et sit
+          faucibus. Sollicitudin elit gravida tellus mattis porttitor.
+        </p>
+
+        <div class="tools-grid">
+          <div class="tool-item">
+            <img src="images/Icon (7).png" class="tool-icon" alt="" />
+            <h3>Sapien amet est</h3>
+            <p>
+              Viverra netus odio nunc ac nibh lorem iaculis. Orci facilisis
+              habitasse cursus tempor et.
+            </p>
+          </div>
+
+          <div class="tool-item">
+            <img src="images/Icon (8).png" class="tool-icon" alt="" />
+            <h3>Tortor ornare</h3>
+            <p>
+              Nulla etiam mattis amet suspendisse lacus nulla sed urna
+              ultricies.
+            </p>
+          </div>
+
+          <div class="tool-item">
+            <img src="images/Icon (9).png" class="tool-icon" alt="" />
+            <h3>Vel lacus</h3>
+            <p>
+              Porttitor quis lectus varius quis dolor morbi massa pellentesque.
+            </p>
+          </div>
+
+          <div class="tool-item">
+            <img src="images/Icon (10).png" class="tool-icon" alt="" />
+            <h3>Hendrerit blandit</h3>
+            <p>
+              A aliquam pharetra in nec vitae ultrices commodo placerat eget.
+            </p>
+          </div>
+
+          <div class="tool-item">
+            <img src="images/Icon (11).png" class="tool-icon" alt="" />
+            <h3>Enim risus turpis</h3>
+            <p>
+              Tristique dui vestibulum senectus ac duis etiam adipiscing sapien.
+            </p>
+          </div>
+
+          <div class="tool-item">
+            <img src="images/Icon (12).png" class="tool-icon" alt="" />
+            <h3>Aliquam lorem et</h3>
+            <p>
+              Suspendisse ultrices morbi iaculis sit lorem. Mauris nulla odio
+              est a mi a sed gravida.
+            </p>
+          </div>
+
+          <div class="tool-item">
+            <img src="images/Icon (9).png" class="tool-icon" alt="" />
+            <h3>Sed aliquam lectus</h3>
+            <p>
+              Rhoncus ut montes quis eget vulputate. Id hac consectetur ornare
+              neque.
+            </p>
+          </div>
+
+          <div class="tool-item">
+            <img src="images/Icon (13).png" class="tool-icon" alt="" />
+            <h3>Cursus diam</h3>
+            <p>
+              Feugiat consectetur eu commodo odio venenatis pretium libero.
+              Volutpat ultricies nisl turpis id.
+            </p>
+          </div>
+
+          <div class="tool-item">
+            <img src="images/Icon (14).png" class="tool-icon" alt="" />
+            <h3>Facilisi vel malesuada</h3>
+            <p>
+              Feugiat consectetur eu commodo odio venenatis pretium libero.
+              Volutpat ultricies nisl turpis id.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--faq section-->
+
+    <section class="faq-section">
+      <div class="faq-container">
+        <h2>Frequently asked questions</h2>
+        <p class="faq-sub">
+          Et pulvinar nec interdum integer id urna molestie porta nullam. A,
+          donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor
+          pharetra sed in mauris elementum sollicitudin.
+        </p>
+
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-question">
+              Enim sodales consequat adipiscing facilisis massa venenatis, non
+              lorem lobortis?
+              <span class="icon">⌄</span>
+            </button>
+            <div class="faq-answer">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              commodo ligula eget dolor.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Venenatis nulla sagittis nunc, lobortis nec sollicitudin neque,
+              dolor?
+              <span class="icon">⌄</span>
+            </button>
+            <div class="faq-answer">
+              Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+              Cras dapibus.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Varius ultricies molestie tellus fermentum, viverra ipsum
+              scelerisque etiam lorem?
+              <span class="icon">⌄</span>
+            </button>
+            <div class="faq-answer">
+              Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu
+              consequat vitae.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Nulla etiam vitae, at sagittis, nibh ultrices mattis feugiat
+              faucibus?
+              <span class="icon">⌄</span>
+            </button>
+            <div class="faq-answer">
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Sagittis consectetur gravida nec turpis eros, id sit et, dictum?
+              <span class="icon">⌄</span>
+            </button>
+            <div class="faq-answer">
+              Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer section-->
+
+   <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <a href="#">User Interface</a>
+        <a href="#">User Experience</a>
+        <a href="#">Digital Media</a>
+        <a href="#">Lifestyle</a>
+        <a href="#">Programming</a>
+        <a href="#">Animation</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#">Pricing</a>
+        <a href="#">Overview</a>
+        <a href="#">Browse</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Five</a>
+        <a href="#">Changelog</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <a href="#">Brainstorming</a>
+        <a href="#">Ideation</a>
+        <a href="#">Wireframing</a>
+        <a href="#">Research</a>
+        <a href="#">Design</a>
+        <a href="#">Concept</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Blog</a>
+        <a href="#">Tutorials</a>
+        <a href="#">FAQs</a>
+        <a href="#">Community</a>
+        <a href="#">Events</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Developers</a>
+        <a href="#">Documentation</a>
+        <a href="#">Integrations</a>
+        <a href="#">Reports</a>
+        <a href="#">Webinar</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Press</a>
+        <a href="#">Events</a>
+        <a href="#">Careers</a>
+        <a href="#">Customers</a>
+        <a href="#">Partners</a>
+      </div>
+
+    </div>
+
+    <html class="footer-bottom">
+      <div class="copyright">
+        break<span>io</span> © 2023 – All rights reserved
+      </div>
+
+      <div class="social">
+        <a href="#"><img src="images/youtube.png" alt=""></a>
+        <a href="#"><img src="images/facebook.png" alt=""></a>
+        <a href="#"><img src="images/twitter.png" alt=""></a>
+        <a href="#"><img src="images/linkedin.png" alt=""></a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
